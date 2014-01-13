@@ -5,12 +5,14 @@ Class projects for the MakerSquare Front-End course beginning 1/13/14.
 
 ## Week 1-2 Project (Bio and Blog)
 ### Part 1
-Bio + photo page, Contact page, individual blog post, in plain HTML. In class, link them together via an index.html page.
+Bio + photo page, Contact page, individual blog post, in plain HTML.
 ### Part 2
-Style the above pages with CSS.
+In class, link them together via an index.html page.
 ### Part 3
-Build a layout (given by instructors) into your bio and blog pages
+Style the above pages with CSS.
 ### Part 4
+Build a layout (given by instructors) into your bio and blog pages
+### Part 5
 Install Jekyll and translate your bio and blog pages from static HTML to Jekyll templates.
 
 ## Week 2: Floats
