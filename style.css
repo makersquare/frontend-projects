@@ -61,6 +61,7 @@ a:focus, a:hover {
 	box-shadow: 1px 1px 8px #999;
 	background: #fff;
 	padding: 10px 20px;
+	margin-bottom: 10px;
 }
 
 .post h2 {
