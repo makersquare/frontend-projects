@@ -33,6 +33,7 @@ a:focus, a:hover {
 /* Nav */
 .nav {
 	margin-bottom: 40px;
+	margin-top: 20px;
 }
 
 .nav a {
