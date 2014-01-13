@@ -1,0 +1,71 @@
+/* Homepage */
+
+body {
+	background: #eee;
+	margin: 0 auto;
+	width: 60%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #4e346c;
+}
+
+/* Links */
+
+a, a:active, a:visited {
+	color: #57b5d6;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: #9eca69;
+	text-decoration: none;
+}
+
+
+/* Nav */
+.nav {
+	margin-bottom: 40px;
+}
+
+.nav a {
+	background: #57b5d6;
+	padding: 10px;
+	color: #fff;
+	display: inline-block;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.nav a:hover {
+	background: #9eca69;
+}
+
+
+/* Blog Post on Homepage */
+
+.blog {
+	margin-bottom: 40px;
+	line-height: 24px;
+	background: #ddd;
+	padding: 10px;
+}
+
+.post {
+	box-shadow: 1px 1px 8px #999;
+	background: #fff;
+	padding: 10px 20px;
+}
+
+.post h2 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* About Page */
