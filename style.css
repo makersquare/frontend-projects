@@ -1,0 +1,60 @@
+/* ---------------------------------------------------------- */
+/* Float Examples for MakerSquare Front-End Class ----------- */
+/* created by Elyse Holladay @elyseholladay ----------------- */
+/* ---------------------------------------------------------- */
+
+body {
+	background: #fff;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #444;
+}
+
+
+/* apply box-sizing property and padding to every div, for visual spacing */
+div {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 20px;
+ }
+
+.container {
+	background: #EBF7F8;
+}
+
+.header {
+	background: #FF9C56;
+}
+
+.logo {
+	background: #FF4D79;
+}
+
+.navigation {
+	background: #E85F43;
+}
+
+.sidebar {
+	background: #FFBE56;
+	height: 300px;
+}
+
+.main_content {
+	background: #88ABC2;
+	color: #fff;
+	height: 300px;
+}
+
+.sub_content {
+	background: #49708A;
+}
+
+.sub_content_sidebar {
+	background: #355163;
+}
+
+.footer {
+	background: #AAD637;
+}
