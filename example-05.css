@@ -3,7 +3,7 @@
 /* created by Elyse Holladay @elyseholladay ----------------- */
 /* ---------------------------------------------------------- */
 
-/* Example 04 */
+/* Example 05 */
 
 .container {
 	width: 1024px;
@@ -12,21 +12,22 @@
 
 
 .header {}
+/* hint! what do you have to add here? */
+
+.logo {}
+
+.navigation {}
+
+.sidebar {}
+
+.main_content {}
 /* hint! you have to contain the floated children elements. */
 
-.logo {
+.sub_content {
+	/* hint! */
+}
+.sub_content_2 {
 	/* hint! */
 }
 
-.navigation {
-	/* hint! */
-}
-
-.sidebar {
-}
-
-.main_content {
-}
-
-.footer {
-}
+.footer {}

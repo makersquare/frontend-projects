@@ -3,30 +3,26 @@
 /* created by Elyse Holladay @elyseholladay ----------------- */
 /* ---------------------------------------------------------- */
 
-/* Example 04 */
+/* Example 07 */
 
 .container {
-	width: 1024px;
+	width: 1024px; /* change me to a percentage width, like 80% */
 	margin: 0 auto;
 }
 
 
 .header {}
-/* hint! you have to contain the floated children elements. */
 
-.logo {
-	/* hint! */
-}
+.logo {}
 
-.navigation {
-	/* hint! */
-}
+.navigation {}
 
-.sidebar {
-}
+.sidebar {}
 
-.main_content {
-}
+.main_content {}
 
-.footer {
-}
+.sub_content {}
+
+.sub_content_2 {}
+
+.footer {}

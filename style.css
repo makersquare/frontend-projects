@@ -6,11 +6,26 @@
 body {
 	background: #fff;
 	font-family: Arial, sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
 	color: #444;
 }
 
+h1, h2, h3, h4, h5, div {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+p {
+	text-transform: none;
+	font-weight: normal;
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+	color: #88ABC2;
+}
+a:hover {
+	color: #FFBE56;
+}
 
 /* apply box-sizing property and padding to every div, for visual spacing */
 div {
@@ -22,6 +37,11 @@ div {
 
 .container {
 	background: #EBF7F8;
+}
+
+.container.index {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .header {
@@ -38,23 +58,31 @@ div {
 
 .sidebar {
 	background: #FFBE56;
-	height: 300px;
 }
 
 .main_content {
 	background: #88ABC2;
 	color: #fff;
-	height: 300px;
 }
 
 .sub_content {
 	background: #49708A;
 }
 
-.sub_content_sidebar {
+.sub_content_2 {
 	background: #355163;
 }
 
 .footer {
 	background: #AAD637;
+}
+
+.widget {
+	background: #BB326B;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 75px;
 }
