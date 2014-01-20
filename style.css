@@ -77,6 +77,21 @@ div {
 	background: #AAD637;
 }
 
+.post {
+	background: #AAD637;
+	margin-bottom: 20px;
+}
+
+.image {
+	background: #8EB22E;
+}
+
+.post_excerpt {
+	background: #708C24;
+	padding: 20px;
+	margin: 0;
+}
+
 .widget {
 	background: #BB326B;
 	margin: 10px;
