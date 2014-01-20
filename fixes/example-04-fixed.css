@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------- */
+/* Float Examples for MakerSquare Front-End Class ----------- */
+/* created by Elyse Holladay @elyseholladay ----------------- */
+/* ---------------------------------------------------------- */
+
+/* Example 04 */
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+.header {}
+
+	.header:after {
+		content: "";
+		display: block;
+		visibility: hidden;
+		clear: both;
+		height: 0;
+	}
+
+.logo {
+	float: left;
+}
+
+.navigation {
+	float: right;
+}
+
+.sidebar {
+	width: 250px;
+	float: left;
+}
+
+.main_content {
+	width: 734px;
+	float: right;
+}
+
+.footer {
+	clear: both;
+}
