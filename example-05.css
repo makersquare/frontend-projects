@@ -10,24 +10,43 @@
 	margin: 0 auto;
 }
 
+/*.clear {clear: both;}*/
 
 .header {}
 /* hint! what do you have to add here? */
 
-.logo {}
+.header:after {
+	content: "hi";
+	background: black;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
 
-.navigation {}
+.logo {float: left;}
 
-.sidebar {}
+.navigation {float: right;}
+
+.sidebar {float: left;}
 
 .main_content {}
 /* hint! you have to contain the floated children elements. */
 
+.main_content:after {
+	content: "hi";
+	background: black;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
 .sub_content {
 	/* hint! */
+	float: left;
 }
 .sub_content_2 {
 	/* hint! */
+	float: left;
 }
 
 .footer {}
