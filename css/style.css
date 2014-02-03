@@ -1,0 +1,26 @@
+header {
+	font-weight: bold;
+}
+
+.menu {
+	background: red;
+	padding: 1em;
+}
+
+.photo {
+	background: blue;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+.hide-for-small.map {
+	background: yellow;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+.show-for-small.map {
+	background: green;
+	padding: 1em;
+	margin-bottom: 2em;
+}
