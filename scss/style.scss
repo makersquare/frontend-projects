@@ -1,0 +1,42 @@
+// VARIABLES
+$white: #fff;
+$lightgrey: #ccc;
+$darkgrey: #444;
+
+// STYLES
+body {
+    background: $lightgrey;
+}
+
+.project-list {
+    @include grid-row(); // this is the same as using a div class row in HTML
+}
+
+.project {
+    @include grid-column(4); // this is the same as writing "columns large-4" in your HTML!
+}
+
+// this wrapper div is needed so we can have both margin and padding; foundation's columns use padding to separate them, so if we add a background there won't be any visual space between project divs.
+.project-wrap {
+    background: $white;
+    padding: 2em 2em 1em 2em;
+    margin-top: 2em;
+    min-height: 400px; // if we give them a min-height, they'll all stack nicely in a grid.
+}
+
+// RESPONSIVE
+@media #{$small-up} {
+    .project {
+        @include grid-column(16);
+    }
+}
+@media #{$medium-up} {
+    .project {
+        @include grid-column(8);
+    }
+}
+@media #{$large-up} {
+    .project {
+        @include grid-column(4);
+    }
+}
