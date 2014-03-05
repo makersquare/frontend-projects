@@ -3,6 +3,7 @@ $white: #fff;
 $lightgrey: #ccc;
 $darkgrey: #444;
 
+
 // only the body background on the homepage
 body.project-list-page {
     background: $lightgrey;
@@ -14,15 +15,35 @@ body.project-list-page {
     @include grid-row(); // this is the same as using a div class row in HTML
 
     // Nested the project divs inside .project-list so that this styling doesn't conflict with the styling on an individual project page
-    .project {
-        @include grid-column(4); // this is the same as writing "columns large-4" in your HTML!
+    @media #{$small-up} {
+        .project {
+            @include grid-column(16);
+        }
     }
+    @media #{$medium-up} {
+        .project {
+            @include grid-column(8);
+        }
+    }
+    @media #{$large-up} {
+        .project {
+            @include grid-column(5);
+        }
+    }
+
     // this wrapper div is needed so we can have both margin and padding; foundation's columns use padding to separate them, so if we add a background there won't be any visual space between project divs.
     .project-wrap {
         background: $white;
         padding: 2em 2em 1em 2em;
         margin-top: 2em;
-        min-height: 400px; // if we give them a min-height, they'll all stack nicely in a grid.
+        min-height: 550px; // if we give them a min-height, they'll all stack nicely in a grid.
+        box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+        border-radius: 4px;
+        opacity: .9;
+    }
+
+    .project-wrap:hover {
+        opacity: 1;
     }
 
     .picture {
@@ -32,22 +53,7 @@ body.project-list-page {
     }
 }
 
-// RESPONSIVE
-@media #{$small-up} {
-    .project-list .project {
-        @include grid-column(16);
-    }
-}
-@media #{$medium-up} {
-    .project-list .project {
-        @include grid-column(8);
-    }
-}
-@media #{$large-up} {
-    .project-list .project {
-        @include grid-column(4);
-    }
-}
+
 
 
 // INDIVIDUAL PROJECT PAGE
@@ -66,11 +72,6 @@ body.project-list-page {
         margin-bottom: 3em;
     }
 
-    .name,
-    .project-name {
-        text-transform: uppercase;
-    }
-
     .name:after {
         content: "is working on...";
         display: inline-block;
@@ -87,9 +88,16 @@ body.project-list-page {
 }
 
 
-// Picture styles we want to always apply no matter the page
+// styles we want to always apply no matter the page
+
 .picture {
     margin: 0 auto;
     border-radius: 100%;
-    display: block
+    display: block;
+    margin-bottom: 2em;
+}
+
+.name,
+.project-name {
+    text-transform: uppercase;
 }
