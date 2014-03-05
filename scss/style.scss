@@ -3,8 +3,8 @@ $white: #fff;
 $lightgrey: #ccc;
 $darkgrey: #444;
 
-// STYLES
-body {
+// only the body background on the homepage
+body.project-list-page {
     background: $lightgrey;
 }
 
@@ -46,6 +46,38 @@ body {
 
 // INDIVIDUAL PROJECT PAGE
 
-.project {
-    @include grid-column(16);
+.project-page {
+    // wrap inside .project-page so styles don't conflict
+    .project {
+        @include grid-column($columns:8,$center:true); // we can use variables as arguments here to center the column, like adding .large-centered
+        margin-top: 8em;
+    }
+
+    .picture {
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+        border: 2px solid $white;
+        border-radius: 100%;
+        margin-bottom: 3em;
+    }
+
+    .name,
+    .project-name {
+        text-transform: uppercase;
+    }
+
+    .name:after {
+        content: "is working on...";
+        display: inline-block;
+        padding-left: 10px;
+        font-style: italic;
+        opacity: .75;
+        text-transform: lowercase;
+    }
+
+    .project-description {
+
+    }
+
 }

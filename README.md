@@ -17,6 +17,7 @@
 13. Git add and commit!
 14. Copy the HTML in `projects/project-sample.html` into your new project page and add your own info!
 15. Git add and commit!
+16. Make a new variable in `style.scss` that is the main color for your project.
 16. Make your project name in `index.html` link to your project page.
 17. Git add and commit!
 

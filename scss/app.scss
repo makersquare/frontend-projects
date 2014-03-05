@@ -1,6 +1,12 @@
 @import "settings";
 @import "../bower_components/foundation/scss/foundation";
+@import "color-test";
 @import "style";
+@import "custom";
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
 
 // Or selectively include components
 // @import
