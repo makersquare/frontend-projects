@@ -24,6 +24,12 @@ body.project-list-page {
         margin-top: 2em;
         min-height: 400px; // if we give them a min-height, they'll all stack nicely in a grid.
     }
+
+    .picture {
+        background: $darkgrey;
+        height: 150px;
+        width: 150px;
+    }
 }
 
 // RESPONSIVE
@@ -54,11 +60,9 @@ body.project-list-page {
     }
 
     .picture {
-        margin: 0 auto;
         height: 300px;
         width: 300px;
         border: 2px solid $white;
-        border-radius: 100%;
         margin-bottom: 3em;
     }
 
@@ -80,4 +84,12 @@ body.project-list-page {
 
     }
 
+}
+
+
+// Picture styles we want to always apply no matter the page
+.picture {
+    margin: 0 auto;
+    border-radius: 100%;
+    display: block
 }
