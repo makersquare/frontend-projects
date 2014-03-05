@@ -37,6 +37,8 @@ Check to see if you have Node installed: `node --version`
 
 If you do not: `brew install node`
 
+Install Bower: `npm install -g bower`
+
 Now install Zurb Foundation using Bower: `bower install foundation`
 
 Bower is a package manager, so it will keep Foundation up to date for you!
