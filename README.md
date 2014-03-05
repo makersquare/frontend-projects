@@ -1,29 +1,19 @@
-# Foundation Compass Template
+# MKS Front-End Cohort 1 Final Projects
 
-The easiest way to get started with Foundation + Compass.
+## To Install
 
-## Requirements
+`git clone` this repo to your projects directory.
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+`cd` into the directory.
 
-## Quickstart
+Check to see if you have Node installed: `node --version`
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+If you do not: `brew install node`
 
-```bash
-compass watch
-```
+Now install Zurb Foundation using Bower: `bower install foundation`
 
-## Upgrading
+Bower is a package manager, so it will keep Foundation up to date for you!
 
-If you'd like to upgrade to a newer version of Foundation down the road just run:
+Run the following command to make Sass watch for changes to your stylesheet: `sass --watch scss/app.scss:stylesheets/app.css`
 
-```bash
-bower update
-```
+This says, "Sass, watch the file `scss/app.scss` to see if there are any changes to it. If there are, compile it to regular css at the file `stylesheets/app.css`. Yay!"
