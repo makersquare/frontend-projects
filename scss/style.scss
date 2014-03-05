@@ -2,7 +2,7 @@
 $white: #fff;
 $lightgrey: #ccc;
 $darkgrey: #444;
-
+$mks-blue: #3C8ABD;
 
 // only the body background on the homepage
 body.project-list-page {
@@ -13,21 +13,28 @@ body.project-list-page {
 
 .project-list {
     @include grid-row(); // this is the same as using a div class row in HTML
-
+    margin-bottom: 5em;
+    
     // Nested the project divs inside .project-list so that this styling doesn't conflict with the styling on an individual project page
     @media #{$small-up} {
         .project {
-            @include grid-column(16);
+            @include grid-column(12);
         }
     }
     @media #{$medium-up} {
         .project {
-            @include grid-column(8);
+            @include grid-column(6);
+        }
+        .project-wrap {
+            min-height: 445px; // if we give them a min-height, they'll all stack nicely in a grid.
         }
     }
     @media #{$large-up} {
         .project {
-            @include grid-column(5);
+            @include grid-column(4);
+        }
+        .project-wrap {
+            min-height: 515px; // min-height has to be taller here
         }
     }
 
@@ -36,7 +43,6 @@ body.project-list-page {
         background: $white;
         padding: 2em 2em 1em 2em;
         margin-top: 2em;
-        min-height: 550px; // if we give them a min-height, they'll all stack nicely in a grid.
         box-shadow: 1px 1px 1px rgba(0,0,0,.25);
         border-radius: 4px;
         opacity: .9;
@@ -100,4 +106,18 @@ body.project-list-page {
 .name,
 .project-name {
     text-transform: uppercase;
+}
+
+
+// HEADER
+
+header {
+    background: $mks-blue;
+    padding: 3em;
+    @include grid-row;
+
+    h1 {
+        color: $white;
+        @include grid-column(16);
+    }
 }

@@ -33,7 +33,7 @@ $base-line-height: 150%;
 
 $row-width: rem-calc(1200);
 $column-gutter: rem-calc(30);
-$total-columns: 16;
+$total-columns: 12;
 
 // We use these to control various global styles
 // $body-bg: #fff;
@@ -114,7 +114,7 @@ $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 
 // We use these to control header font styles
 $header-font-family: "PlutoMedium";
-// $header-font-weight: 300;
+$header-font-weight: normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
 $header-line-height: 1.2;
@@ -123,7 +123,7 @@ $header-line-height: 1.2;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
+$h1-font-size: rem-calc(44);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
