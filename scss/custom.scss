@@ -1,0 +1,24 @@
+// CUSTOMIZATIONS
+
+$elyse-project-color: #651B63;
+
+// add your project main color here:
+// $MYNAME-project-color: HEXVALUE;
+
+
+$daniel-project-color: #1EE8D4;
+
+
+// change the body background color on each page based on your name
+
+#elyse {
+    @include readable($elyse-project-color); // this readable mixin is in color-test.scss. it determines what the font color should be based on your background color!
+}
+
+#alex {}
+
+#sartaj {}
+
+#daniel {
+	@include readable($daniel-project-color);
+}
