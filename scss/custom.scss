@@ -7,6 +7,7 @@ $alex-project-color: #3c2267;
 // $MYNAME-project-color: HEXVALUE;
 
 
+$daniel-project-color: #1EE8D4;
 
 
 // change the body background color on each page based on your name
@@ -21,3 +22,6 @@ $alex-project-color: #3c2267;
 
 #sartaj {}
 
+#daniel {
+	@include readable($daniel-project-color);
+}
