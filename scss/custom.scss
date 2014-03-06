@@ -2,11 +2,13 @@
 
 $elyse-project-color: #651B63;
 $becca-project-color: #faf6bd;
+$alex-project-color: #3c2267;
 
 // add your project main color here:
 // $MYNAME-project-color: HEXVALUE;
 
 
+$daniel-project-color: #1EE8D4;
 
 
 // change the body background color on each page based on your name
@@ -15,11 +17,15 @@ $becca-project-color: #faf6bd;
     @include readable($elyse-project-color); // this readable mixin is in color-test.scss. it determines what the font color should be based on your background color!
 }
 
-#alex {}
+#alex {
+    @include readable($alex-project-color);
+}
 
 #sartaj {}
 
 #becca {
 	@include readable($becca-project-color);
 }
-
+#daniel {
+	@include readable($daniel-project-color);
+}
