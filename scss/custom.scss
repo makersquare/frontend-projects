@@ -18,3 +18,8 @@ $elyse-project-color: #651B63;
 
 #sartaj {}
 
+@scott-project-color: #0f7b85;
+
+#scott {
+	@include readable($scott-project-color); // this readable mixin is in color-test.scss. it determines what the font color should be based on your background color!
+}
