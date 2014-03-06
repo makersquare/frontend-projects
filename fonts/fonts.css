@@ -1,0 +1,43 @@
+@import url("//hello.myfonts.net/count/2a065d");
+
+  
+@font-face {font-family: 'PlutoMedium';src: url('2A065D_0_0.eot');src: url('2A065D_0_0.eot?#iefix') format('embedded-opentype'),url('2A065D_0_0.woff') format('woff'),url('2A065D_0_0.ttf') format('truetype');}
+ 
+
+@font-face {
+    font-family: 'PlutoSansExtraLight';
+    src: url('plutosans_exlight.eot');
+    src: url('plutosans_exlight.eot?#iefix') format('embedded-opentype'),
+         url('plutosans_exlight.woff') format('woff'),
+         url('plutosans_exlight.ttf') format('truetype'),
+         url('plutosans_exlight.svg#PlutoSansExtraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'PlutoSansRegular';
+    src: url('plutosans_regular.eot');
+    src: url('plutosans_regular.eot?#iefix') format('embedded-opentype'),
+         url('plutosans_regular.woff') format('woff'),
+         url('plutosans_regular.ttf') format('truetype'),
+         url('plutosans_regular.svg#PlutoSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'PlutoSansBold';
+    src: url('plutosans_bold.eot');
+    src: url('plutosans_bold.eot?#iefix') format('embedded-opentype'),
+         url('plutosans_bold.woff') format('woff'),
+         url('plutosans_bold.ttf') format('truetype'),
+         url('plutosans_bold.svg#PlutoSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
