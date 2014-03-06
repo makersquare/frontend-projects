@@ -1,6 +1,7 @@
 // CUSTOMIZATIONS
 
 $elyse-project-color: #651B63;
+$becca-project-color: #faf6bd;
 
 // add your project main color here:
 // $MYNAME-project-color: HEXVALUE;
@@ -17,4 +18,8 @@ $elyse-project-color: #651B63;
 #alex {}
 
 #sartaj {}
+
+#becca {
+	@include readable($becca-project-color);
+}
 
