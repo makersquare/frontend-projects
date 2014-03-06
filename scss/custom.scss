@@ -1,6 +1,7 @@
 // CUSTOMIZATIONS
 
 $elyse-project-color: #651B63;
+$becca-project-color: #faf6bd;
 $alex-project-color: #3c2267;
 
 // add your project main color here:
@@ -22,6 +23,9 @@ $daniel-project-color: #1EE8D4;
 
 #sartaj {}
 
+#becca {
+	@include readable($becca-project-color);
+}
 #daniel {
 	@include readable($daniel-project-color);
 }
