@@ -1,6 +1,7 @@
 // CUSTOMIZATIONS
 
 $elyse-project-color: #651B63;
+$alex-project-color: #3c2267;
 
 // add your project main color here:
 // $MYNAME-project-color: HEXVALUE;
@@ -14,7 +15,9 @@ $elyse-project-color: #651B63;
     @include readable($elyse-project-color); // this readable mixin is in color-test.scss. it determines what the font color should be based on your background color!
 }
 
-#alex {}
+#alex {
+    @include readable($alex-project-color);
+}
 
 #sartaj {}
 
