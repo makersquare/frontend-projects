@@ -6,6 +6,7 @@ $elyse-project-color: #651B63;
 // $MYNAME-project-color: HEXVALUE;
 
 
+$daniel-project-color: #1EE8D4;
 
 
 // change the body background color on each page based on your name
@@ -18,3 +19,6 @@ $elyse-project-color: #651B63;
 
 #sartaj {}
 
+#daniel {
+	@include readable($daniel-project-color);
+}
