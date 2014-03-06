@@ -1,0 +1,123 @@
+// VARIABLES
+$white: #fff;
+$lightgrey: #ccc;
+$darkgrey: #444;
+$mks-blue: #3C8ABD;
+
+// only the body background on the homepage
+body.project-list-page {
+    background: $lightgrey;
+}
+
+// PROJECT LIST HOMEPAGE
+
+.project-list {
+    @include grid-row(); // this is the same as using a div class row in HTML
+    margin-bottom: 5em;
+    
+    // Nested the project divs inside .project-list so that this styling doesn't conflict with the styling on an individual project page
+    @media #{$small-up} {
+        .project {
+            @include grid-column(12);
+        }
+    }
+    @media #{$medium-up} {
+        .project {
+            @include grid-column(6);
+        }
+        .project-wrap {
+            min-height: 445px; // if we give them a min-height, they'll all stack nicely in a grid.
+        }
+    }
+    @media #{$large-up} {
+        .project {
+            @include grid-column(4);
+        }
+        .project-wrap {
+            min-height: 515px; // min-height has to be taller here
+        }
+    }
+
+    // this wrapper div is needed so we can have both margin and padding; foundation's columns use padding to separate them, so if we add a background there won't be any visual space between project divs.
+    .project-wrap {
+        background: $white;
+        padding: 2em 2em 1em 2em;
+        margin-top: 2em;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+        border-radius: 4px;
+        opacity: .9;
+    }
+
+    .project-wrap:hover {
+        opacity: 1;
+    }
+
+    .picture {
+        background: $darkgrey;
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+
+
+// INDIVIDUAL PROJECT PAGE
+
+.project-page {
+    // wrap inside .project-page so styles don't conflict
+    .project {
+        @include grid-column($columns:8,$center:true); // we can use variables as arguments here to center the column, like adding .large-centered
+        margin-top: 8em;
+    }
+
+    .picture {
+        height: 300px;
+        width: 300px;
+        border: 2px solid $white;
+        margin-bottom: 3em;
+    }
+
+    .name:after {
+        content: "is working on...";
+        display: inline-block;
+        padding-left: 10px;
+        font-style: italic;
+        opacity: .75;
+        text-transform: lowercase;
+    }
+
+    .project-description {
+
+    }
+
+}
+
+
+// styles we want to always apply no matter the page
+
+.picture {
+    margin: 0 auto;
+    border-radius: 100%;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.name,
+.project-name {
+    text-transform: uppercase;
+}
+
+
+// HEADER
+
+header {
+    background: $mks-blue;
+    padding: 3em;
+    @include grid-row;
+
+    h1 {
+        color: $white;
+        @include grid-column(16);
+    }
+}
