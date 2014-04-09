@@ -1,0 +1,24 @@
+.gallery > div, .pad {
+	padding-top: 15px;
+}
+
+.pad .panel {
+	margin-bottom: 0px;
+}
+
+.gallery > div {
+	padding-bottom: 15px;
+}
+
+.button {
+	display: block;
+	background: grey;
+}
+
+.active {
+	background: #339933;
+}
+
+.gallery img {
+	width: 100%;
+}

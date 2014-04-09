@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Plugin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/foundation.min.css">
+        <link rel="stylesheet" href="style.css" />
+        <!-- include the core styles -->
+    <link rel="stylesheet" href="alertify.core.css" />
+    <!-- include a theme, can be included into the core instead of 2 separate files -->
+    <link rel="stylesheet" href="alertify.default.css" />
+    </head>
+    <body>
+
+        <div class="row">
+          <div class="large-12 columns">
+
+           <!-- SIDE BAR -->
+            <div class="row">
+
+              <div class="large-4 small-12 columns pad">
+
+                <div class="panel">
+                  <h3>Show Images Of</h3>
+                  <div class="row">
+<!--                     <div class="small-6 columns">
+                      <div class="button active" id="filter-show-all">Show All</div>
+                    </div>
+                    <div class="small-6 columns">
+                      <div class="button" id="filter-show-none">Show None</div>
+                    </div> -->
+                  </div>
+                  <div class="filter-button individual button active" id="monkey">Monkeys</div>
+                  <div class="filter-button individual button active" id="dog">Dogs</div>
+                  <div class="filter-button individual button active" id="cat">Cats</div>
+                </div>
+              </div><!-- End Side Bar -->
+              <!-- Thumbnails -->
+
+              <div class="large-8 columns">
+                <div class="row gallery">
+                  <div class="large-4 small-6 columns animal cat">
+                    <img src="images/cat-3.jpg">
+                  </div>
+                  <div class="large-4 small-6 columns animal monkey">
+                    <img src="images/monkey-2.jpg">
+                  </div>
+                  <div class="large-4 small-6 columns animal dog">
+                    <img src="images/dog-1.jpg">
+                  </div>
+                  <div class="large-4 small-6 columns animal cat">
+                    <img src="images/cat-2.jpg">
+                  </div>
+                  <div class="large-4 small-6 columns animal monkey">
+                    <img src="images/monkey-1.jpg">
+                  </div>
+                  <div class="large-4 small-6 columns animal dog">
+                    <img src="images/dog-3.jpg">
+                  </div>
+                   <div class="large-4 small-6 columns animal monkey">
+                    <img src="images/monkey-3.jpg">
+                  </div>
+                   <div class="large-4 small-6 columns animal cat">
+                    <img src="images/cat-1.jpg">
+                  </div>
+                  <div class="large-4 small-6 columns animal dog">
+                    <img src="images/dog-2.jpg">
+                  </div>
+                </div><!-- End Thumbnails -->
+                <!-- Managed By -->
+
+              </div>
+            </div><!-- Footer -->
+
+          </div>
+        </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- ideally at the bottom of the page -->
+<!-- also works in the <head> -->
+<script src="alertify.js"></script>
+    <script src="script.js"></script>
+
+    </body>
+</html>
