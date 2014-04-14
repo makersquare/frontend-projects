@@ -5,4 +5,24 @@
 
 /* Example 12 */
 
-/* I'm blank! Write some CSS to style your layout! */
+/* To Do List */
+.todolist {}
+
+/* Individual Todo */
+.todo {}
+
+
+/* Priority icon dot */
+.icon {}
+
+/* Info of the todo, title and date */
+.todo-info {}
+
+/* Title */
+.todo-title {}
+
+/* Date */
+.todo-date {}
+
+/* Checkboxes! */
+input[type=checkbox] {}

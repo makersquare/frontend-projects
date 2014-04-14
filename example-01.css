@@ -6,34 +6,34 @@
 /* Example 01 */
 
 .container {
-	width: 1024px; /* fixed width layout */
-	margin: 0 auto; /* centers this containing element in the browser viewport */
+    width: 1024px; /* fixed width layout */
+    margin: 0 auto; /* centers this containing element in the browser viewport */
 }
 
 .header {
-
+    /* we don't want the header floated, so nothing to do here! */
 }
 
 .sidebar {
-	float: left; /* to move the sidebar to the left-most side of its containing element, on a new line after the last non-floated element */
-	width: 250px; /* 1024 - 250 = 774px remaining for the main content div. because we used box-sizing, this div will actually be 250px even with 20px of padding on each side. try removing the box-sizing property in style.css and see how that changes the calculated width of this div. */
-	height: 300px; /* here, the height property is for visual purposes only. you wouldn't normally add height if there was content. */
+    float: left; /* float the sidebar to the left—it will go to the left-most side of its containing element, on a new line after the last non-floated element */
+    width: 250px; /* 1024 - 250 = 774px remaining for the main content div. because we used box-sizing, this div will actually be 250px even with 20px of padding on each side. try removing the box-sizing property in style.css and see how that changes the calculated width of this div. */
+    height: 300px; /* here, the height property is for visual purposes only. you wouldn't normally add height if there was content. */
 }
 
-.main_content {
-	float: left; /* you could float right, too, but left is more consistent */
-	width: 734px; /* however, this can't actually be 774px because there's 40px of padding, and since we used box-sizing, the padding is removed from the width */
-	height: 300px; /* again, for example purposes only */
+.main-content {
+    float: left; /* you could float right, too, but left is more consistent */
+    width: 734px; /* however, this can't actually be 774px because there's 40px of padding, and since we used box-sizing, the padding is removed from the width */
+    height: 300px; /* again, for example purposes only */
 }
 
 .footer {
-	clear: both; /* to clear the floated elements above it. try removing me and see what happens. it might be more obvious if you add some margin to all the elements. */
+    clear: both; /* to clear the floated elements above it. try removing me and see what happens. it might be more obvious if you add some margin to all the elements. */
 
 }
 
-/*
-div {
-	margin: 20px;
-}
-*/
-/* if you comment this margin out, you'll be more able to see what happens when you don't clear the footer. but because you added margin, your pixel width values will no longer add up. how can you fix it? */
+
+/*div {
+    margin: 20px;
+}*/
+
+/* if you comment this margin and the footer clear out, you'll be more able to see what happens when you don't clear the footer. but because you added margin, your pixel width values will no longer add up. how can you fix it? */

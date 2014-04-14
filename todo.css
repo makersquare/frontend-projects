@@ -1,0 +1,107 @@
+/* To Do Styles */
+
+/* To Do List */
+.todolist {}
+
+/* Individual Todo */
+.todo {}
+
+	/* make text of overdue todos red */
+	.todo.overdue {
+		color: rgb(249,56,49);
+	}
+
+/* Priority icons */
+.icon {
+	font-size: 2.5em;
+	color: #9bc33f; /* normal/green */
+	padding-top: 10px;
+}
+
+	/* Urgent/red */
+	.icon.urgent {
+		color: rgb(249,56,49);
+	}
+
+	/* Medium/orange */
+	.icon.medium {
+		color: #ff753e;
+	}
+
+/* Info of the todo, title and date */
+.todo-info {
+}
+
+/* Title */
+.todo-title {
+	text-transform: none;
+	line-height: 1.5em;
+	font-weight: normal;
+	font-family: "PlutoSansExtraLight";
+}
+
+/* Date */
+.todo-date {
+	color: #bbb;
+	font-weight: normal;
+	font-size: 14px;
+	text-transform: none;
+	font-family: "PlutoSansRegular";
+}
+
+	/* Note about the date, e.g. "that's today!" or "overdue" */
+	.date-note {
+		font-style: italic;
+	}
+
+	.overdue .date-note {
+		color: rgb(249,56,49);
+	}
+
+
+/* Checkboxes! */
+input[type=checkbox] {}
+
+
+
+/* Fonts */
+@font-face {
+    font-family: 'PlutoSansExtraLight';
+    src: url('http://elyseholladay.com/fonts/plutosans_exlight.eot');
+    src: url('http://elyseholladay.com/fonts/plutosans_exlight.eot?#iefix') format('embedded-opentype'),
+         url('http://elyseholladay.com/fonts/plutosans_exlight.woff') format('woff'),
+         url('http://elyseholladay.com/fonts/plutosans_exlight.ttf') format('truetype'),
+         url('http://elyseholladay.com/fonts/plutosans_exlight.svg#PlutoSansExtraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'PlutoSansRegular';
+    src: url('http://elyseholladay.com/fonts/plutosans_regular.eot');
+    src: url('http://elyseholladay.com/fonts/plutosans_regular.eot?#iefix') format('embedded-opentype'),
+         url('http://elyseholladay.com/fonts/plutosans_regular.woff') format('woff'),
+         url('http://elyseholladay.com/fonts/plutosans_regular.ttf') format('truetype'),
+         url('http://elyseholladay.com/fonts/plutosans_regular.svg#PlutoSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Override other float exercise styles */
+div {
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	background: #eee;
+	}
+
+.container {
+	background: transparent;
+	padding: 40px 0;
+}

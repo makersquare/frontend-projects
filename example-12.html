@@ -3,14 +3,102 @@
 		<title>Example 12 | MakerSquare Float Exercises</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="todo.css">
 		<link rel="stylesheet" href="example-12.css">
 	</head>
 
 	<body>
-	<!-- Create a layout of your choosing! -->
+	<!-- Use floats to make this look like a To Do list. -->
 
 	<div class="container">
-		<p>I'm blank! Make a layout!</p>
+		<!-- To Do list -->
+		<div class="todolist">
+
+			<!-- To Do Item -->
+			<div class="todo overdue">
+				<div class="icon urgent">&#9679;</div>
+				<div class="todo-info">
+					<div class="todo-title">Pay Rent</div>
+					<div class="todo-date">
+						<span class="date-note">Overdue!</span>
+						April 1
+					</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" value="None" id="check" name="check" />
+					<label for="check"></label>
+				</div>
+			</div>
+
+			<!-- To Do Item -->
+			<div class="todo">
+				<div class="icon urgent">&#9679;</div>
+				<div class="todo-info">
+					<div class="todo-title">Pay taxes</div>
+					<div class="todo-date">
+						April 14
+						<span class="date-note">That's today!</span>
+					</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" value="None" id="check" name="check" />
+					<label for="check"></label>
+				</div>
+			</div>
+
+			<!-- To Do Item -->
+			<div class="todo">
+				<div class="icon medium">&#9679;</div>
+				<div class="todo-info">
+					<div class="todo-title">Do floats homework</div>
+					<div class="todo-date">Monday, April 21</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" value="None" id="check" name="check" />
+					<label for="check"></label>
+				</div>
+			</div>
+
+			<!-- To Do Item -->
+			<div class="todo">
+				<div class="icon medium">&#9679;</div>
+				<div class="todo-info">
+					<div class="todo-title">Get groceries</div>
+					<div class="todo-date">Friday, April 18</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" value="None" id="check" name="check" />
+					<label for="check"></label>
+				</div>
+			</div>
+
+			<!-- To Do Item -->
+			<div class="todo">
+				<div class="icon">&#9679;</div>
+				<div class="todo-info">
+					<div class="todo-title">Get a haircut</div>
+					<div class="todo-date">Friday, April 18</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" value="None" id="check" name="check" />
+					<label for="check"></label>
+				</div>
+			</div>
+
+			<!-- To Do Item -->
+			<div class="todo">
+				<div class="icon">&#9679;</div>
+				<div class="todo-info">
+					<div class="todo-title">Call your mom</div>
+					<div class="todo-date">Saturday, April 19</div>
+				</div>
+				<div class="check">
+					<input type="checkbox" value="None" id="check" name="check" />
+					<label for="check"></label>
+				</div>
+			</div>
+
+		</div>
 	</div>
 	</body>
 </html>

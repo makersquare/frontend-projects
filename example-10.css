@@ -7,12 +7,12 @@
 
 .header {}
 
-.main_content {}
-/* hint! */
+.sidebar {}
 
-.post {}
-/* hint! */
+.main-content {}
 
-.image {}
+.sub-content {}
 
-.post_excerpt {}
+.footer {}
+
+/* what do you have to add to make the sidebar and content and footer not be the full width of the browser? */

@@ -27,6 +27,14 @@ a:hover {
 	color: #FFBE56;
 }
 
+.example {
+	margin-bottom: 60px;
+}
+
+.example img {
+	max-width: 80%;
+}
+
 /* apply box-sizing property and padding to every div, for visual spacing */
 div {
 	-moz-box-sizing: border-box;
@@ -60,16 +68,16 @@ div {
 	background: #FFBE56;
 }
 
-.main_content {
+.main-content {
 	background: #88ABC2;
 	color: #fff;
 }
 
-.sub_content {
+.sub-content {
 	background: #49708A;
 }
 
-.sub_content_2 {
+.sub-content-2 {
 	background: #355163;
 }
 
